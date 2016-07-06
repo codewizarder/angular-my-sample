@@ -1,0 +1,11 @@
+.header{
+    width: 100%;
+    clear: both;
+    background-color: darkseagreen;
+}
+
+.content{
+    width: 100%;
+    clear: both;
+    background-color: cornsilk;
+}
