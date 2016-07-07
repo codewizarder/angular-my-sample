@@ -18,6 +18,14 @@
             console.warn(err);
         });
         
+        vm.getTeacherInfo = function(AdmissionNo){
+            TeacherService.getTeacher(AdmissionNo).then(function(data){
+                console.log(data);
+            }, function(error){
+                alert('Error')
+            });
+        }
+        
         console.log(promise);
     }
     

@@ -11,6 +11,10 @@
         var vm = this;
         
         vm.test = title;
+        vm.info = {
+            name: 'TestTimer',
+            age: 555
+        }
     }
     
 })();

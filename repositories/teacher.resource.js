@@ -8,8 +8,8 @@
     TeacherRepository.$inject = ['$resource'];
     /* @ngInject */
     function TeacherRepository($resource){      
-        var teacherURl = 'http://roadrunnerapi.apphb.com/odata/Teachers';
-        return $resource(teacherURl,{},{
+        var teacherURl = 'http://roadrunnerapi.apphb.com/odata/Students';
+        return $resource(teacherURl,{teacherId: '@idm'},{
             getAllTeachers: {method: 'GET'},
             getTeacherDetails: {method: 'GET', url: teacherURl + '(:teacherId)'}
         });

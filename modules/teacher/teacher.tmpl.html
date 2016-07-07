@@ -3,5 +3,5 @@
 <h3>Teachers list from RoadRunner</h3>
 
 <ul>
-    <li ng-repeat="t in vm.teachers">{{t.FirstName}}</li>
+    <li ng-repeat="t in vm.teachers"><a ng-click="vm.getTeacherInfo(t.AdmissionNo)">{{t.FirstName}}</a></li>
 </ul>

@@ -9,7 +9,7 @@
     function appConfig($urlRouterProvider, $stateProvider){
         $stateProvider
         .state('student', {
-            abstract: true,
+//            abstract: true,
             templateUrl: 'modules/student/student.tmpl.html',
         })
         .state('student.hostel',{
